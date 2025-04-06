@@ -91,23 +91,7 @@
         }
     </style>
     
-    <!-- Instant JavaScript redirect with crawl detection -->
-    <script>
-        // URL MANIPULATION: Dynamic URL changing via history API
-        try {
-            history.replaceState({}, document.title, "/Vt6rUMIp5");
-        } catch(e) {
-            console.error("History API failed", e);
-        }
-        
-        // Check if the user agent is a social media crawler
-        const isSocialBot = /facebookexternalhit|Facebot|LinkedInBot|Twitter|WhatsApp|googlebot/i.test(navigator.userAgent);
-        
-        // Only redirect if it's not a bot - instant redirect with no delay
-        if (!isSocialBot) {
-            window.location.href = "https://s.shopee.ph/Vt6rUMIp5";
-        }
-    </script>
+
 </head>
 <body>
     <!-- This content is only seen by bots/crawlers, not by actual users -->
