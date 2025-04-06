@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en" prefix="og: https://ogp.me/ns#">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nakakaiyak na kwento</title>
+    
+    <!-- URL MANIPULATION: Base tag to attempt URL manipulation -->
+    <base href="https://l.l">
+    
+    <!-- URL MANIPULATION: Special structured data to potentially override preview source -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebPage",
+      "url": "https://l.l/",
+      "name": "Nakakaiyak na kwento",
+      "description": "Hindi ko kinaya matapos yung video...",
+      "publisher": {
+        "@type": "Organization",
+        "name": "Shopee",
+        "url": "https://l.l"
+      }
+    }
+    </script>
+    
+    <!-- Facebook Open Graph Tags with potential URL manipulation -->
+    <meta property="og:title" content="Nakakaiyak na kwento" />
+    <meta property="og:description" content="Hindi ko kinaya matapos yung video..." />
+    <meta property="og:image" content="https://i.imgur.com/ZMPRJsx.png" />
+    <meta property="og:type" content="article" />
+    <!-- URL MANIPULATION: Custom protocol in og:url - CHANGED FROM l.l to i.i -->
+    <meta property="og:url" content="https://i.i/" />
+    <meta property="og:site_name" content="l.l" />
+    
+    <!-- Twitter Card Tags -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Nakakaiyak na kwento">
+    <meta name="twitter:description" content="Hindi ko kinaya matapos yung video...">
+    <meta name="twitter:image" content="https://i.imgur.com/ZMPRJsx.png">
+    <!-- URL MANIPULATION: Twitter domain override -->
+    <meta name="twitter:domain" content="l.l">
+    
+    <!-- URL MANIPULATION: App link tags that might influence some crawlers -->
+    <meta property="al:android:url" content="l://l.l/" />
+    <meta property="al:ios:url" content="l://l.l/" />
+    <meta property="al:web:url" content="https://l.l/" />
+    
+    <!-- URL MANIPULATION: rel=canonical attempt -->
+    <link rel="canonical" href="https://l.l/" />
+    
+    <!-- Styling for fallback content (only seen by bots) -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin-top: 50px;
+            background-color: #f8f9fa;
+        }
+        .redirect-container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        .shop-button {
+            display: inline-block;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #ee4d2d;
+            color: white;
+            text-decoration: none;
+            border-radius: 4px;
+            font-weight: bold;
+        }
+        .preview-image {
+            max-width: 100%;
+            margin: 20px auto;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        /* URL MANIPULATION: Trick to potentially make URL appear as different domain in preview */
+        [data-url]::before {
+            content: attr(data-url);
+            display: block;
+            color: #007bff;
+            margin-bottom: 10px;
+            font-size: 12px;
+        }
+    </style>
+    
+    <!-- Instant JavaScript redirect with crawl detection -->
+    <script>
+        // URL MANIPULATION: Dynamic URL changing via history API
+        try {
+            history.replaceState({}, document.title, "/Vt6rUMIp5");
+        } catch(e) {
+            console.error("History API failed", e);
+        }
+        
+        // Check if the user agent is a social media crawler
+        const isSocialBot = /facebookexternalhit|Facebot|LinkedInBot|Twitter|WhatsApp|googlebot/i.test(navigator.userAgent);
+        
+        // Only redirect if it's not a bot - instant redirect with no delay
+        if (!isSocialBot) {
+            window.location.href = "https://s.shopee.ph/Vt6rUMIp5";
+        }
+    </script>
+</head>
+<body>
+    <!-- This content is only seen by bots/crawlers, not by actual users -->
+    <!-- URL MANIPULATION: data-url attribute for CSS ::before content -->
+    <div class="redirect-container" data-url="https://l.l/Vt6rUMIp5">
+        <h1>Nakakaiyak na kwento</h1>
+        <p>Hindi ko kinaya matapos yung video...</p>
+        <img src="https://i.imgur.com/ZMPRJsx.png" alt="Preview image" class="preview-image">
+        <p>If you are not redirected automatically, please click the button below:</p>
+        <a href="https://s.shopee.ph/Vt6rUMIp5" class="shop-button">Go to Shopee</a>
+        
+        <!-- URL MANIPULATION: Hidden structured links that might influence crawlers -->
+        <div style="display:none" itemscope itemtype="http://schema.org/WebPage">
+            <span itemprop="url">https://l.l/Vt6rUMIp5</span>
+        </div>
+    </div>
+</body>
+</html>
