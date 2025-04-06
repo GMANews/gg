@@ -5,51 +5,37 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nakakaiyak na kwento</title>
     
-    <!-- URL MANIPULATION: Base tag to attempt URL manipulation -->
-    <base href="https://l.l">
+    <!-- EDIT URL HERE: The canonical URL affects SEO and Facebook -->
+    <!-- This should match your og:url for consistency -->
+    <link rel="canonical" href="https://s.shopee.ph/Vt6rUMIp5" />
     
-    <!-- URL MANIPULATION: Special structured data to potentially override preview source -->
+    <!-- EDIT URL HERE: Schema.org URL affects Google rich results and may influence Facebook -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "WebPage",
-      "url": "https://l.l/",
+      "url": "https://s.shopee.ph/Vt6rUMIp5", <!-- Change this URL to modify structured data URL -->
       "name": "Nakakaiyak na kwento",
-      "description": "Hindi ko kinaya matapos yung video...",
-      "publisher": {
-        "@type": "Organization",
-        "name": "Shopee",
-        "url": "https://l.l"
-      }
+      "description": "Hindi ko kinaya matapos yung video..."
     }
     </script>
     
-    <!-- Facebook Open Graph Tags with potential URL manipulation -->
+    <!-- FACEBOOK OPEN GRAPH TAGS - These control Facebook preview cards -->
     <meta property="og:title" content="Nakakaiyak na kwento" />
     <meta property="og:description" content="Hindi ko kinaya matapos yung video..." />
     <meta property="og:image" content="https://i.imgur.com/ZMPRJsx.png" />
-    <meta property="og:type" content="article" />
-    <!-- URL MANIPULATION: Custom protocol in og:url - CHANGED FROM l.l to i.i -->
-    <meta property="og:url" content="https://i.i/" />
-    <meta property="og:site_name" content="l.l" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:type" content="website" />
     
-    <!-- Twitter Card Tags -->
-    <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Nakakaiyak na kwento">
-    <meta name="twitter:description" content="Hindi ko kinaya matapos yung video...">
-    <meta name="twitter:image" content="https://i.imgur.com/ZMPRJsx.png">
-    <!-- URL MANIPULATION: Twitter domain override -->
-    <meta name="twitter:domain" content="l.l">
+    <!-- EDIT URL HERE: This is the most important tag for URL preview on Facebook -->
+    <!-- Facebook will generally display this URL in the preview card -->
+    <meta property="og:url" content="https://s.shopee.ph/Vt6rUMIp5" />
     
-    <!-- URL MANIPULATION: App link tags that might influence some crawlers -->
-    <meta property="al:android:url" content="l://l.l/" />
-    <meta property="al:ios:url" content="l://l.l/" />
-    <meta property="al:web:url" content="https://l.l/" />
+    <!-- EDIT SITE NAME HERE: This can affect how the URL appears -->
+    <meta property="og:site_name" content="Shopee" />
     
-    <!-- URL MANIPULATION: rel=canonical attempt -->
-    <link rel="canonical" href="https://l.l/" />
-    
-    <!-- Styling for fallback content (only seen by bots) -->
+    <!-- Styling for fallback content -->
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -81,32 +67,31 @@
             border-radius: 8px;
             box-shadow: 0 2px 5px rgba(0,0,0,0.1);
         }
-        /* URL MANIPULATION: Trick to potentially make URL appear as different domain in preview */
-        [data-url]::before {
-            content: attr(data-url);
-            display: block;
-            color: #007bff;
-            margin-bottom: 10px;
-            font-size: 12px;
-        }
     </style>
     
-
+    <!-- JavaScript redirect for regular users -->
+    <script>
+        // Check if the user agent is Facebook's crawler
+        const isFacebookBot = /facebookexternalhit|Facebot/i.test(navigator.userAgent);
+        
+        // Only redirect if it's not Facebook's bot
+        if (!isFacebookBot) {
+            // EDIT URL HERE: Change this to your actual destination URL 
+            // This doesn't affect social previews but controls where users are sent
+            window.location.href = "https://s.shopee.ph/Vt6rUMIp5";
+        }
+    </script>
 </head>
 <body>
-    <!-- This content is only seen by bots/crawlers, not by actual users -->
-    <!-- URL MANIPULATION: data-url attribute for CSS ::before content -->
-    <div class="redirect-container" data-url="https://l.l/Vt6rUMIp5">
+    <!-- This content is only seen by bots/crawlers -->
+    <div class="redirect-container">
         <h1>Nakakaiyak na kwento</h1>
         <p>Hindi ko kinaya matapos yung video...</p>
         <img src="https://i.imgur.com/ZMPRJsx.png" alt="Preview image" class="preview-image">
         <p>If you are not redirected automatically, please click the button below:</p>
-        <a href="https://s.shopee.ph/Vt6rUMIp5" class="shop-button">Go to Shopee</a>
         
-        <!-- URL MANIPULATION: Hidden structured links that might influence crawlers -->
-        <div style="display:none" itemscope itemtype="http://schema.org/WebPage">
-            <span itemprop="url">https://l.l/Vt6rUMIp5</span>
-        </div>
+        <!-- EDIT URL HERE: This button is only seen by bots or if JS fails -->
+        <a href="https://s.shopee.ph/Vt6rUMIp5" class="shop-button">Go to Shopee</a>
     </div>
 </body>
 </html>
